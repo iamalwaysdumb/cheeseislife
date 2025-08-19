@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Cheese is Life</title>
+    <link rel="stylesheet" href="mainstyle.css">
+  </head>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.slider');
+  const slides = slider ? slider.querySelectorAll('img, a img') : [];
+  const navButtons = document.querySelectorAll('.slider-nav a');
+  let currentSlide = 0;
+
+  function goToSlide(index) {
+    if (slider && slides[index]) {
+      slider.scrollTo({
+        left: slides[index].offsetLeft,
+        behavior: 'smooth'
+      });
+      currentSlide = index;
+    }
+  }
+
+  navButtons.forEach((btn, i) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      goToSlide(i);
+    });
+  });
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    goToSlide(currentSlide);
+  }, 5000);
+});
+</script>
+  <body>
+    
+  
+<header>
+  <div class="nav-search-container">
+    <div class="logo-box">
+      <img id="logo" src="logo.png" alt="Logo" />
+    </div>
+    <div class="header-title-nav">
+      <h1>Cheese is Life</h1>
+      <hr color="#6d4c1b"          width="400px" size="2px">
+      <nav>
+        <a id="home" href="try1.html">Home</a>
+        <a id="list" href="cheeses.html">Cheese List</a>
+        <a id="about"  href="about.html">About</a>
+        <a id="contact" href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <form class="search-form">
+      <input type="text" placeholder="Search cheese...">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+    <section class="container">
+      <div class="slide-wrapper">
+        <div class="slider">
+          <img id="slide1" src="mic.png" alt="cute mice which was personally doodled be me">
+          <img id="slide2" src="day.png" alt="Cheese of the                  day
+some random cheeses that is definetly not  popular
+yap,yap,yap  weoww mewo">
+          <img id="slide3" src="cheese.png" alt="Cheddar
+very yum
+hard cheese
+made from cows milk
+from: England">
+          <img id="slide4" src="cheese2.png" alt=" Brie
+also very yum
+very soft
+from: France(mamma mia)
+">
+          <img id="slide5" src="cheese3.png" alt="Gorgonzola very moldy
+Made from pasteurized cow's milk
+Type: soft, blue-veined
+Country of origin: Italy
+formaggio">    
+          <img id="slide6" src="cheese4.png" alt="feta   copy of paneer
+made from goat milk
+very soft">
+          <img id="slide7" src="cheese5.png" alt="Manchego    very expensive
+from: spain
+made from sheep’s milk
+very hard">
+        </div>
+       <div class="slider-nav">
+  <a data-slide="0"></a>
+  <a data-slide="1"></a>
+  <a data-slide="2"></a>
+  <a data-slide="3"></a>
+  <a data-slide="4"></a>
+  <a data-slide="5"></a>
+  <a data-slide="6"></a>
+</div>
+      </div>
+    </section>
+    <main>
+   <table class="main-dyk-row">
+    <tr>
+      <td><main class="main-content">
+    <h2>Welcome to Cheese is Life!</h2>
+    <p>Discover cheeses from around the world. Browse, learn, and find your favorites!</p>
+    <p>Cheese is one of the most nutritious foods. It's typically made of cow's milk but also of other mammals, such as sheep, goats, buffalo, reindeer, camels, and yaks. Around 4000 years ago people started to breed animals and process their milk, and that's when cheese happened.</p>
+    <p>Embark on a cheese adventure by exploring our database of 2046 different types of cheese. Try our recipes. Buy cheese gifts and make someone happy.</p>
+  </main>
+      </td>
+  <td class="dyk">
+    <h2>Did You Know?</h2>
+    <p>Cheese is one of the oldest foods known to humanity, with origins dating back over 7,000 years!</p>
+</td>
+    </tr>
+    </table>
+    </main>
+    <main>
+      <h1 class="main-content">Our cheeses</h1>
+       <hr color="#6d4c1b"          width="900px" size="2px">
+       <table>
+        <tr>
+          <td>
+            
+          </td>
+        </tr>
+       </table>
+     
+    </main>
+
+
+      
+ 
+  
+    <footer>
+      <p>&copy; 2025 Cheese is Life</p>
+    </footer>
+    
+  </body>
+</html>
