@@ -1,11 +1,6 @@
 <html>
 <head>
- <title>Cheese is Life - Read Me</title>
-  <style>
-    body { font-family: sans-serif; padding: 20px; line-height: 1.5; background: #fff8dc; }
-    h1 { color: #d2691e; }
-    ul { margin-left: 20px; }
-  </style>
+ 
 </head>
 <body>
   <h1>🧀 Cheese is Life</h1>
